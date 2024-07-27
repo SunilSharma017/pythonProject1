@@ -1,0 +1,48 @@
+
+h1{
+    background-color:blue;
+    color:white;
+    text-align:center;
+}
+
+input[type="text"],input[type="email"],input[type="password"],input[type="number"]{
+width:30vw;
+height:40px;
+border-radius:7px;
+font-size:23px;
+margin-bottom:2vh;
+}
+
+button{
+    background-color:red;
+    color:white;
+    text-align:center;
+    height:40px;
+border-radius:7px;
+font-size:23px;
+margin-bottom:2vh;
+}
+
+form{
+    margin-left:20vw;
+    margin-top:10vh;
+    font-size:25px;
+}
+label{
+    font-size:23px;
+    margin-bottom:2vh;
+}
+
+
+input[type="date"],select{
+    width:10vw;
+    font-size:23px;
+    border-radius:7px;
+    height:40px;
+    margin-bottom:3vh;
+
+}
+
+input[type="radio"],input[type="checkbox"]{
+    font-size:25px;
+}

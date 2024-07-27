@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form submit</title>
+</head>
+<body>
+
+  <p> Hey mr/mrs {{name}} you have successfully login in our website .<br>
+    name is : {{name}}<br>
+    email is : {{email}}<br>
+    password is : {{password}}<br>
+    dob is : {{dob}}<br>
+    </p>
+    <p> 
+    
+       {% for key,values in dct %}
+       {{key}}{{values}}
+          {% for i in values %}
+            <p>{{i}}</p>
+        {% endfor %}
+    {% endfor %}
+    </p>
+    
+</body>
+</html>

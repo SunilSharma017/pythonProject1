@@ -1,0 +1,60 @@
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1> Registration Form </h1>
+    <form action="{% url 'Home' %}" method="post">
+       {% csrf_token %}
+        <label>Name</label><br>
+        <input type="text" name="n1"><br>
+        <label>Father Name</label><br>
+        <input type="text" name="n2"><br>
+        <label>Mother Name</label><br>
+        <input type="text" name="n3"><br>
+        <label>Mobile No.</label><br>
+        <input type="number" name="num"><br>
+        <label>DOB </label>
+        <input type="date" name="n4"><br>
+        <label>City</label>
+       <select name="n5">
+        <option>Gurgaon</option>
+        <option>Delhi</option>
+        <option>Noida</option>
+        <option>Alwar</option>
+        <option>Jaipur</option>
+       </select><br>
+       <label>State</label>
+       <select name="n6">
+        <option>Haryana</option>
+        <option>UP</option>
+        <option>MP</option>
+        <option>Rajasthan</option>
+        <option>Bihar</option>
+       </select><br>
+       <label>Email</label><br>
+       <input type="email" name="n7"><br>
+       <label>Password</label><br>
+       <input type="password" name="n8"><br>
+       <label>Confirm Password</label><br>
+       <input type="password" name="n9"><br>
+       <label>Gender</label>
+       <input type="radio" name="n10" value="male">Male 
+       <input type="radio" name="n10" value="female">Female
+       <input type="radio" name="n10" value="others">Others <br>
+       <label>Subjects</label>
+       <input type="checkbox" name="n11" value="Math">Math
+       <input type="checkbox" name="n11" value="Arst">Arts
+       <input type="checkbox" name="n11" value="Commerce">Commerce <br>
+
+       <button>submit</button>
+
+
+    </form>
+    
+</body>
+</html>
